@@ -1,0 +1,52 @@
+{
+    "best_model": "XGBoost",
+    "best_params": {
+        "subsample": 0.8,
+        "scale_pos_weight": 1.5990300048731814,
+        "n_estimators": 150,
+        "max_depth": 6,
+        "learning_rate": 0.01
+    },
+    "model_results": {
+        "LogisticRegression": {
+            "validation_auc": 0.5872080352236452,
+            "cv_auc": 0.5118245700864201,
+            "best_params": {
+                "solver": "lbfgs",
+                "penalty": "l2",
+                "C": 1
+            }
+        },
+        "RandomForest": {
+            "validation_auc": 0.6241179185954777,
+            "cv_auc": 0.584776636314057,
+            "best_params": {
+                "n_estimators": 100,
+                "min_samples_split": 5,
+                "max_features": "sqrt",
+                "max_depth": 10
+            }
+        },
+        "XGBoost": {
+            "validation_auc": 0.6261252362517309,
+            "cv_auc": 0.5879825013404272,
+            "best_params": {
+                "subsample": 0.8,
+                "scale_pos_weight": 1.5990300048731814,
+                "n_estimators": 150,
+                "max_depth": 6,
+                "learning_rate": 0.01
+            }
+        },
+        "LightGBM": {
+            "validation_auc": 0.625319293883227,
+            "cv_auc": 0.549755288594737,
+            "best_params": {
+                "num_leaves": 31,
+                "n_estimators": 150,
+                "max_depth": 6,
+                "learning_rate": 0.05
+            }
+        }
+    }
+}

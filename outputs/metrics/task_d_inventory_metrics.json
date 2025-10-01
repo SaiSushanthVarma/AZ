@@ -1,0 +1,49 @@
+{
+    "best_model": "XGBoost",
+    "best_params": {
+        "subsample": 0.9,
+        "n_estimators": 200,
+        "max_depth": 10,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.9
+    },
+    "model_results": {
+        "RandomForest": {
+            "validation_rmse": 13.715544852345639,
+            "validation_mae": 9.88777895282069,
+            "validation_business_cost": 19.565351225924605,
+            "cv_rmse": 13.715027462449854,
+            "best_params": {
+                "n_estimators": 200,
+                "min_samples_split": 15,
+                "max_features": "sqrt",
+                "max_depth": 25
+            }
+        },
+        "XGBoost": {
+            "validation_rmse": 9.986006961888359,
+            "validation_mae": 6.3913883177893505,
+            "validation_business_cost": 12.646237371308462,
+            "cv_rmse": 9.842074340228345,
+            "best_params": {
+                "subsample": 0.9,
+                "n_estimators": 200,
+                "max_depth": 10,
+                "learning_rate": 0.05,
+                "colsample_bytree": 0.9
+            }
+        },
+        "LightGBM": {
+            "validation_rmse": 10.354546084643399,
+            "validation_mae": 6.508966003673715,
+            "validation_business_cost": 12.92221549460798,
+            "cv_rmse": 10.185478786029906,
+            "best_params": {
+                "num_leaves": 31,
+                "n_estimators": 150,
+                "max_depth": 6,
+                "learning_rate": 0.05
+            }
+        }
+    }
+}

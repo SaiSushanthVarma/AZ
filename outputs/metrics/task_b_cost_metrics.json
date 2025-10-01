@@ -1,0 +1,60 @@
+{
+    "best_model": "LightGBM",
+    "best_params": {
+        "subsample": 0.8,
+        "num_leaves": 40,
+        "n_estimators": 200,
+        "min_child_samples": 30,
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "colsample_bytree": 0.8
+    },
+    "model_results": {
+        "RandomForest": {
+            "validation_rmse": 33724.28185618774,
+            "validation_mae": 26169.972622417088,
+            "validation_mape": 26.281850366417885,
+            "validation_r2": 0.4028400252133433,
+            "cv_rmse": 33616.02055202016,
+            "best_params": {
+                "n_estimators": 150,
+                "min_samples_split": 5,
+                "min_samples_leaf": 2,
+                "max_features": "sqrt",
+                "max_depth": 25
+            }
+        },
+        "XGBoost": {
+            "validation_rmse": 33165.398285992385,
+            "validation_mae": 25678.743825608257,
+            "validation_mape": 25.602181554119973,
+            "validation_r2": 0.42246846283764206,
+            "cv_rmse": 32973.2111692271,
+            "best_params": {
+                "subsample": 0.7,
+                "n_estimators": 200,
+                "min_child_weight": 1,
+                "max_depth": 6,
+                "learning_rate": 0.05,
+                "gamma": 0.1,
+                "colsample_bytree": 0.7
+            }
+        },
+        "LightGBM": {
+            "validation_rmse": 33149.943483132716,
+            "validation_mae": 25673.604180125316,
+            "validation_mape": 25.554501715379384,
+            "validation_r2": 0.42300658732139684,
+            "cv_rmse": 32951.50288695013,
+            "best_params": {
+                "subsample": 0.8,
+                "num_leaves": 40,
+                "n_estimators": 200,
+                "min_child_samples": 30,
+                "max_depth": 6,
+                "learning_rate": 0.1,
+                "colsample_bytree": 0.8
+            }
+        }
+    }
+}
